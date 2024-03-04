@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="root">
+    
+</body>
+<script>
+    let body = document.getElementById('root');
+    let container = document.createElement('div');
+    container.className = 'container';
+    body.appendChild(container);
+
+    let user_image = document.createElement('img');
+    user_image.src="https://avatars.mds.yandex.net/i?id=3fa2aa229deeb6a7764846eb44f3b8bada756161-10869405-images-thumbs&n=13";
+    user_image.alt="user_image";
+    container.appendChild(user_image);
+
+    let user_info = document.createElement('div');
+    user_info.className="user-info";
+    container.appendChild(user_info);
+
+    let user_name = document.createElement('p');
+    user_name.className="user-name";
+    user_name.innerHTML = "Someone";
+    user_info.appendChild(user_name);
+
+    let user_phone = document.createElement('p');
+    user_phone.className="user-phone";
+    user_phone.innerHTML = "+992 ## ### ## ##";
+    user_info.appendChild(user_phone);
+
+    let user_email = document.createElement('a');
+    user_email.className="user-email";
+    user_email.innerHTML = "example@gmail.com";
+    user_info.appendChild(user_email);
+</script>
+</html>
